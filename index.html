@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="src/output.css">
+    <title>Twoo Eight</title>
+    <style>
+        /* * {
+            cursor: none;
+        } */
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        .grow{
+            transform: scale(5);
+            background: #fff;
+            mix-blend-mode: difference;
+            border: none;
+        }
+        .cursor {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+        }
+        .loader p {
+            line-height: 0;
+            /* font-kerning: none; */
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <div class="loader w-full h-screen bg-black text-white fixed z-[99] flex items-center justify-center">
+        <div class="">
+            <p id="loader-text" class="uppercase font-bold text-5xl tracking-wide animate-pulse">twoo eight</p>
+            <!-- <p  class="uppercase font-bold text-5xl tracking-wide ">to</p>
+            <p  class="uppercase font-bold text-5xl tracking-wide ">twoo eight</p>
+            <p  class="uppercase font-bold text-5xl tracking-wide ">clothing</p>
+            <p  class="uppercase font-bold text-5xl tracking-wide ">by</p>
+            <p  class="uppercase font-bold text-5xl text-orange-600 tracking-wide">sourav</p> -->
+        </div>
+    </div>
+    <div class="hidden md:block cursor w-[25px] h-[25px] rounded-full border-[4px] border-yellow-300 bg-yellow-300 z-10 "></div>
+    <nav class="flex w-full h-auto items-center justify-between p-3">
+        <div>
+            <h1 class="text-2xl font-bold">Twoo Eight</h1>
+        </div>
+        <div>
+            <ul class="hidden md:flex gap-4 font-semibold">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Women</li></a>
+                <a href=""><li>Men</li></a>
+                <a href=""><li>Contact Us</li></a>
+                <a href=""><li>Foundation</li></a>
+            </ul>
+        </div>
+        <div>
+            <a href=""><p class="hidden md:block bg-black text-white px-4 py-2 uppercase font-semibold rounded-2xl text-xs">follow us</p></a>
+            <p class="md:hidden text-2xl font-semibold"><i class="ri-menu-3-line"></i></p>
+        </div>
+    </nav>
+    <header class="w-full flex flex-col justify-center h-[40vh] items-center text-center">
+        <div class="flex items-center justify-center gap-2">
+            <h1 id="cursor-scale" class="flex font-bold text-4xl md:text-7xl">Experince </h1>
+            <p id="cursor-scale" class="newbrand w-[140px] text-xl bg-[#7d71ed] px-2 py-2 rounded-xl text-gray-200 rotate-[-9deg] font-semibold">New Brand</p>
+        </div>
+        <h1 id="cursor-scale" class="twoo text-6xl font-bold mt-4 md:text-8xl">Tw<span class="flower inline-block text-4xl mx-[-6px] md:text-6xl">🏵️</span>o Eight</h1>
+        <p class="clothing font-semibold text-xl">Clothing</p>
+    </header>
+    <section class="w-full h-[55vh] md:h-[70vh] flex items-center justify-evenly overflow-x-scroll auto md:overflow-y-hidden md:overflow-x-hidden">
+        <div class="card-l w-[180px] h-auto shrink-0  mx-6">
+            <img id="cursor-scale" class="rounded-xl" src="https://i.pinimg.com/564x/3c/16/ba/3c16ba7ff6aa56a8dc74a5c496934657.jpg" alt="">
+        </div>
+        <div class="card-b w-[180px] h-auto shrink-0  mx-6">
+            <p class="mt-6 text-xs font-semibold">Embrace the escape in style – where every piece is a journey.</p>
+            <img id="cursor-scale" class="rounded-xl mt-4" src="https://i.pinimg.com/564x/19/8e/c6/198ec66ab6bf19704135ece20da48dfc.jpg" alt="">
+        </div>
+        <div class="card-b w-[180px] h-auto shrink-0  mx-6">
+            <img id="cursor-scale" class="rounded-xl" src="https://i.pinimg.com/564x/7b/1d/da/7b1dda2a4d1fd6ee137c7707aaffdd9f.jpg" alt="">
+        </div>
+        <div class="card-r w-[180px] h-auto shrink-0  mx-6">
+            <p class="mt-10 text-xs font-semibold">Fashion that’s always a step ahead – be bold, be swift, be ‘Fleeing.’.</p>
+            <img id="cursor-scale" class="rounded-xl mt-4" src="https://i.pinimg.com/564x/40/d7/ac/40d7acb652abc8dc25bd7313a31c0de7.jpg" alt="">
+        </div>
+    </section>
+    <section class="scroll h-[100vh] w-full bg-gray-100 flex items-center gap-6 overflow-x-hidden">
+        <div class="card w-[90%] h-[90%] bg-white ml-[6%] md:ml-[6%] md:flex border border-white rounded-lg  shrink-0 overflow-y-hidden">
+            <img id="cursor-scale" class="md:w-[40%] md:h-[100%]" src="https://i.pinimg.com/564x/a0/71/9a/a0719a81dd123f3c557339c4d440327d.jpg" alt="">
+            <div class="p-4 md:p-7">
+                <div id="cursor-scale" class="mytext text-black text-4xl md:text-6xl font-serif">Make your look more perfect with <span class="text-green-500">our</span></div>
+                <h1 id="cursor-scale" class="text-orange-400 text-4xl md:text-6xl font-serif mt-4">Oversized Tees</h1>
+                <p class="text-xs md:text-sm font-semibold fixed bottom-8">For a casual look, pair the <b>oversized t-shirt</b> with denim or shorts. For a classier, more glamorous look, put on a skin-fit skirt, heels, and some statement accessories. You can also wear them with formal trousers and blazers for a semi-formal look.</p>
+            </div>
+        </div>
+        <div class="card w-[90%] h-[90%] bg-white ml-[6%] md:ml-[10%] md:flex border border-white rounded-lg shrink-0 overflow-y-hidden">
+            <img id="cursor-scale" class="md:w-[40%] md:h-[100%]" src="https://i.pinimg.com/564x/a0/71/9a/a0719a81dd123f3c557339c4d440327d.jpg" alt="">
+            <div class="p-4 md:p-7">
+                <div id="cursor-scale" class="mytext text-black text-4xl md:text-6xl font-serif">Make your look more perfect with <span class="text-green-500">our</span></div>
+                <h1 id="cursor-scale" class="text-orange-400 text-4xl md:text-6xl font-serif mt-4">Oversized Tees</h1>
+                <p class="text-xs md:text-sm font-semibold fixed bottom-8">For a casual look, pair the <b>oversized t-shirt</b> with denim or shorts. For a classier, more glamorous look, put on a skin-fit skirt, heels, and some statement accessories. You can also wear them with formal trousers and blazers for a semi-formal look.</p>
+            </div>
+        </div>
+        <div class="card w-[90%] h-[90%] bg-white ml-[6%] md:ml-[10%] md:flex border border-white rounded-lg shrink-0 overflow-y-hidden">
+            <img id="cursor-scale" class="md:w-[40%] md:h-[100%]" src="https://i.pinimg.com/564x/a0/71/9a/a0719a81dd123f3c557339c4d440327d.jpg" alt="">
+            <div class="p-4 md:p-7">
+                <div id="cursor-scale" class="mytext text-black text-4xl md:text-6xl font-serif">Make your look more perfect with <span class="text-green-500">our</span></div>
+                <h1 id="cursor-scale" class="text-orange-400 text-4xl md:text-6xl font-serif mt-4">Oversized Tees</h1>
+                <p class="text-xs md:text-sm font-semibold fixed bottom-8">For a casual look, pair the <b>oversized t-shirt</b> with denim or shorts. For a classier, more glamorous look, put on a skin-fit skirt, heels, and some statement accessories. You can also wear them with formal trousers and blazers for a semi-formal look.</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 h-fit py-5 md:py-0 md:h-[100vh] w-full">
+        <!-- <h1 class="text-center uppercase text-2xl md:text-5xl mt-8 md:mt-16 font-semibold">Our Products</h1> -->
+        <div id="card-container" class="w-full md:h-[100vh] items-center justify-evenly flex-col md:grid md:grid-cols-3 md:gap-4">
+            <div id="pro-card" class="bg-[#d2e4eb] w-[90%] h-fit m-auto mt-5 md:mt-auto md:w-[250px] shrink-0 rounded p-3">
+                <img class="rounded" src="https://i.pinimg.com/736x/58/94/62/589462cac5b9f7065453569f13ae2493.jpg" alt="">
+                <div class="flex items-center justify-between mt-3">
+                    <h2 class="uppercase font-semibold text-lg text-[#225d72]">tech jacket</h2>
+                    <h2 class="uppercase font-bold text-lg text-[#fa5b07]">₹600</h2>
+                </div>
+                <div class="bg-[#225d7273] flex items-center w-20 h-8 rounded-3xl mb-2">
+                    <span class="ml-2 h-5 w-5 bg-black rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-white rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-pink-500 rounded-full"></span>
+                </div>                
+                <p class="font-semibold text-[#607f8a] text-xs">Stylish, futuristic, Versatile tech jacket-perfect for any weather, exceptionally comfortable.</p>
+                <div class=" w-full flex items-center justify-between mt-2">
+                    <a href=""><button class="w-[190%] py-[4px] md:py-[5px] rounded-md bg-transparent border-[2px] border-[#225d72] m-auto text-[#225d72]">More Details</button></a>
+                    <a href=""><i class="ri-shopping-cart-2-line border bg-[#225d72] rounded-md p-[11px] text-white"></i></a>
+                </div>
+            </div>
+            <div id="pro-card" class="bg-[#d2e4eb] w-[90%] h-fit m-auto mt-5 md:mt-auto md:w-[250px] shrink-0 rounded p-3">
+                <img class="rounded" src="https://i.pinimg.com/736x/58/94/62/589462cac5b9f7065453569f13ae2493.jpg" alt="">
+                <div class="flex items-center justify-between mt-3">
+                    <h2 class="uppercase font-semibold text-lg text-[#225d72]">tech jacket</h2>
+                    <h2 class="uppercase font-bold text-lg text-[#fa5b07]">₹600</h2>
+                </div>
+                <div class="bg-[#225d7273] flex items-center w-20 h-8 rounded-3xl mb-2">
+                    <span class="ml-2 h-5 w-5 bg-black rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-white rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-pink-500 rounded-full"></span>
+                </div>                
+                <p class="font-semibold text-[#607f8a] text-xs">Stylish, futuristic, Versatile tech jacket-perfect for any weather, exceptionally comfortable.</p>
+                <div class=" w-full flex items-center justify-between mt-2">
+                    <a href=""><button class="w-[190%] py-[4px] md:py-[5px] rounded-md bg-transparent border-[2px] border-[#225d72] m-auto text-[#225d72]">More Details</button></a>
+                    <a href=""><i class="ri-shopping-cart-2-line border bg-[#225d72] rounded-md p-[11px] text-white"></i></a>
+                </div>
+            </div>
+            <div id="pro-card" class="bg-[#d2e4eb] w-[90%] h-fit m-auto mt-5 md:mt-auto md:w-[250px] shrink-0 rounded p-3">
+                <img class="rounded" src="https://i.pinimg.com/736x/58/94/62/589462cac5b9f7065453569f13ae2493.jpg" alt="">
+                <div class="flex items-center justify-between mt-3">
+                    <h2 class="uppercase font-semibold text-lg text-[#225d72]">tech jacket</h2>
+                    <h2 class="uppercase font-bold text-lg text-[#fa5b07]">₹600</h2>
+                </div>
+                <div class="bg-[#225d7273] flex items-center w-20 h-8 rounded-3xl mb-2">
+                    <span class="ml-2 h-5 w-5 bg-black rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-white rounded-full"></span>
+                    <span class="ml-[-8px] h-5 w-5 bg-pink-500 rounded-full"></span>
+                </div>                
+                <p class="font-semibold text-[#607f8a] text-xs">Stylish, futuristic, Versatile tech jacket-perfect for any weather, exceptionally comfortable.</p>
+                <div class=" w-full flex items-center justify-between mt-2">
+                    <a href=""><button class="w-[190%] py-[4px] md:py-[5px] rounded-md bg-transparent border-[2px] border-[#225d72] m-auto text-[#225d72]">More Details</button></a>
+                    <a href=""><i class="ri-shopping-cart-2-line border bg-[#225d72] rounded-md p-[11px] text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-container" class="w-full relative">
+        <div id="top" class="w-full h-[50vh] absolute top-[0%] bg-gray-100 flex items-end justify-center overflow-y-hidden z-50">
+            <h1 id="t-h" class="font-bold uppercase text-5xl md:text-9xl absolute bottom-[-5%] md:bottom-[-20%]">Twoo Eight</h1>
+        </div>
+        <div id="center" class="w-full h-[100vh] bg-black flex items-center justify-center">
+            <div>
+                <h1 id="foot" class="text-white uppercase font-bold text-4xl text-center">developed by sourav</h1>
+            <h1 id="foot" class="text-orange-400 uppercase font-bold text-4xl text-center">live soon</h1>
+            </div>
+        </div>
+        <div id="bottom" class="w-full h-[50vh] absolute bottom-[0%] bg-gray-100 flex items-end justify-center overflow-y-hidden z-50">
+            <h1 id="b-h" class="font-bold uppercase text-5xl md:text-9xl absolute top-[-8%] md:top-[-23%]">Twoo Eight</h1>
+        </div>
+    </section>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
